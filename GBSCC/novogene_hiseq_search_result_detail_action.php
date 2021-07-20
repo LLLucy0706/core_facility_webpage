@@ -104,8 +104,6 @@ for ($i = 0; $i < $count_search_result; $i++) {
             if ($search_result[$i]['Form_file'] != "" && $search_result[$i]['Contract_file'] != "") {
 
                 $result_lab = search("select * from lab where lab_name='" . $search_result[$i]['lab'] . "'");
-                $tomail = "gongxin@novogene.com,"."hanxiao@novogene.com,"."asia_hmt@novogene.com,"."wendysou@um.edu.mo,".$result_lab[0]['director_email'] . "," . $search_result[$i]['email'];
-                //$tomail = "siyun.liu@uq.net.au,".$result_lab[0]['director_email'] . "," . $search_result[$i]['email'];
                 $tomail_arr = explode(',', $tomail);
                 require('email_CC.php');
                 $CC_arr = explode(',', $CC);                
@@ -136,8 +134,7 @@ for ($i = 0; $i < $count_search_result; $i++) {
                             Wendy Sou
                             <br>
                             Faculty of Health Sciences | University of Macau
-                            <br>
-                            Tel: +853 8822 4976";
+                            <br>;
 
                     require './PHPMailer-master/PHPMailerAutoload.php';
                     $mail = new PHPMailer;
@@ -147,9 +144,8 @@ for ($i = 0; $i < $count_search_result; $i++) {
                     $mail->SMTPSecure = "tls";
                     $mail->Host = "smtp.office365.com";
                     $mail->Port = 587;
-                    $mail->Username = "fhs.genomics.core@outlook.com";
-                    $mail->Password = "gbscc12345";
-                    $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
+                    $mail->Username = "******";
+                    $mail->Password = "******";
                     $mail->Subject = $Subject;
                     $mail->MsgHTML($main_mesg);
 
@@ -184,8 +180,6 @@ for ($i = 0; $i < $count_search_result; $i++) {
         if ($search_result[$i]['Approval'] == "Rejected") {
 
                 $result_lab=search("select * from lab where lab_name='".$search_result[$i]['lab']."'");
-                $tomail= "wendysou@um.edu.mo,".$result_lab[0]['director_email'].",".$search_result[$i]['email'];
-                //$tomail= "siyun.liu@uq.net.au,".$result_lab[0]['director_email'].",".$search_result[$i]['email'];
                 require('email_CC.php');
                 $tomail_arr = explode(',', $tomail);
                 $CC_arr = explode(',', $CC);
@@ -206,9 +200,8 @@ for ($i = 0; $i < $count_search_result; $i++) {
                     $mail->SMTPSecure = "tls";
                     $mail->Host = "smtp.office365.com";
                     $mail->Port = 587;
-                    $mail->Username = "fhs.genomics.core@outlook.com";
-                    $mail->Password = "gbscc12345";
-                    $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
+                    $mail->Username = "******";
+                    $mail->Password = "******";
                     $mail->Subject = $Subject;
                     $mail->MsgHTML($main_mesg);
 
