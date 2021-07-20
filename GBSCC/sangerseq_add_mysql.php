@@ -260,29 +260,11 @@ session_start(); ?>
             $mail->SMTPSecure = "tls";
             $mail->Host = "smtp.office365.com";
             $mail->Port = 587;
-            $mail->Username = "fhs.genomics.core@outlook.com";
-            $mail->Password = "gbscc12345";
-            $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
+            $mail->Username = "******";
+            $mail->Password = "******";
             $mail->Subject = $Subject;
             $mail->MsgHTML($main_mesg);
 			
-			/*
-			require './PHPMailer-master/PHPMailerAutoload.php';
-			$mail = new PHPMailer;
-			$mail->CharSet    ="UTF-8";                
-			$mail->IsSMTP();                       
-			$mail->SMTPAuth   = true;            
-			$mail->SMTPSecure = "ssl";                
-			$mail->Host       = "smtp.gmail.com";      
-			$mail->Port       = 465;                
-			$mail->Username   = "fhs.genomics.core@gmail.com"; 
-			$mail->Password   = "genomicscore";       
-			$mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');   
-			#$mail->AddReplyTo("miaozhengqiang1987@gmail.com"," ");                                      
-			$mail->Subject    = $Subject;                  
-			#$mail->AltBody    = ""; 
-			$mail->MsgHTML($main_mesg);   
-			*/
 			
 			for($i=0;$i<count($tomail_arr);$i++){
 				$mail->AddAddress($tomail_arr[$i]);
