@@ -1,7 +1,7 @@
 <?php 
 
 function db_connect(){
-		$result=new mysqli('localhost','root','fhs12345','genomics_core');
+		$result=new mysqli('localhost','root','******','******');
 		echo $result->connect_error;
 		if(!$result){
 				
