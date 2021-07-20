@@ -110,9 +110,8 @@ if (!$res) {
             $mail->SMTPSecure = "ssl";
             $mail->Host       = "smtp.gmail.com";
             $mail->Port       = 465;
-            $mail->Username   = "fhs.genomics.core@gmail.com";
-            $mail->Password   = "genomicscore";
-            $mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');
+            $mail->Username   = "******";
+            $mail->Password   = "******";
             $mail->Subject    = $Subject;
             $mail->MsgHTML($main_mesg);
 
@@ -159,9 +158,8 @@ if (!$res) {
             $mail->SMTPSecure = "ssl";
             $mail->Host       = "smtp.gmail.com";
             $mail->Port       = 465;
-            $mail->Username   = "fhs.genomics.core@gmail.com";
-            $mail->Password   = "genomicscore";
-            $mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');
+            $mail->Username   = "******";
+            $mail->Password   = "******";
             $mail->Subject    = $Subject;
             $mail->MsgHTML($main_mesg);
 
