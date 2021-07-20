@@ -216,8 +216,6 @@ if($RNA_extraction != "" && $library_QC != "" && $sequencing != "" && $RNA6G != 
 
                 
                 $result_lab=search("select * from lab where lab_name='$lab'");
-                $tomail="wendysou@um.edu.mo,".$result_lab[0]['director_email'].",".$email;
-                //$tomail="460774252@qq.com,".$result_lab[0]['director_email'].",".$email;
                 require('email_CC.php');
                 $tomail_arr=explode(',',$tomail);
                 $CC_arr=explode(',',$CC);
@@ -238,9 +236,8 @@ if($RNA_extraction != "" && $library_QC != "" && $sequencing != "" && $RNA6G != 
                     $mail->SMTPSecure = "tls";
                     $mail->Host = "smtp.office365.com";
                     $mail->Port = 587;
-                    $mail->Username = "fhs.genomics.core@outlook.com";
-                    $mail->Password = "gbscc12345";
-                    $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
+                    $mail->Username = "******";
+                    $mail->Password = "******";
                     $mail->Subject = $Subject;
                     $mail->MsgHTML($main_mesg);
 
