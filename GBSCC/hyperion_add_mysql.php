@@ -244,7 +244,7 @@
                 $mail->Host       = "smtp.gmail.com";
                 $mail->Port       = 465;
                 $mail->Username   = "fhs.genomics.core@gmail.com";
-                $mail->Password   = "genomicscore";
+                $mail->Password   = "******";
                 $mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');
                 $mail->Subject    = $Subject;
                 $mail->MsgHTML($main_mesg);
