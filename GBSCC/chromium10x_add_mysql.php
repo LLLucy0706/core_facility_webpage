@@ -124,7 +124,7 @@ if (!$res) {
         $mail->Host       = "smtp.gmail.com";
         $mail->Port       = 465;
         $mail->Username   = "fhs.genomics.core@gmail.com";
-        $mail->Password   = "genomicscore";
+        $mail->Password   = "******";
         $mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');
         $mail->Subject    = $Subject;
         $mail->MsgHTML($main_mesg);
@@ -139,7 +139,7 @@ if (!$res) {
         $mail->Host = "smtp.office365.com";
         $mail->Port = 587;
         $mail->Username = "fhs.genomics.core@outlook.com";
-        $mail->Password = "gbscc12345";
+        $mail->Password = "******";
         $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
         $mail->Subject = $Subject;
         $mail->MsgHTML($main_mesg);
