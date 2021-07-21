@@ -602,9 +602,8 @@ if(is_uploaded_file($_FILES['sample_file']['tmp_name'])){
                             $mail->SMTPSecure = "tls";
                             $mail->Host = "smtp.office365.com";
                             $mail->Port = 587;
-                            $mail->Username = "fhs.genomics.core@outlook.com";
-                            $mail->Password = "gbscc12345";
-                            $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
+                            $mail->Username = "******";
+                            $mail->Password = "******";
                             $mail->Subject = $Subject;
                             $mail->MsgHTML($main_mesg);
 							
@@ -617,10 +616,8 @@ if(is_uploaded_file($_FILES['sample_file']['tmp_name'])){
 							$mail->SMTPSecure = "ssl";                
 							$mail->Host       = "smtp.gmail.com";      
 							$mail->Port       = 465;                
-							$mail->Username   = "fhs.genomics.core@gmail.com"; 
-							$mail->Password   = "genomicscore";       
-							$mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');   
-							#$mail->AddReplyTo("miaozhengqiang1987@gmail.com"," ");                                      
+							$mail->Username   = "******"; 
+							$mail->Password   = "******";       
 							$mail->Subject    = $Subject;                  
 							#$mail->AltBody    = ""; 
 							$mail->MsgHTML($main_mesg); #                       
@@ -1128,9 +1125,8 @@ else{
                 $mail->SMTPSecure = "tls";
                 $mail->Host = "smtp.office365.com";
                 $mail->Port = 587;
-                $mail->Username = "fhs.genomics.core@outlook.com";
-                $mail->Password = "gbscc12345";
-                $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
+                $mail->Username = "******";
+                $mail->Password = "******";
                 $mail->Subject = $Subject;
                 $mail->MsgHTML($main_mesg);
 				
@@ -1143,10 +1139,8 @@ else{
 				$mail->SMTPSecure = "ssl";                
 				$mail->Host       = "smtp.gmail.com";      
 				$mail->Port       = 465;                
-				$mail->Username   = "fhs.genomics.core@gmail.com"; 
-				$mail->Password   = "genomicscore";       
-				$mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');    
-				#$mail->AddReplyTo("miaozhengqiang1987@gmail.com"," ");                                      
+				$mail->Username   = "******"; 
+				$mail->Password   = "******";       
 				$mail->Subject    = $Subject;                  
 				#$mail->AltBody    = ""; 
 				$mail->MsgHTML($main_mesg); #                       
