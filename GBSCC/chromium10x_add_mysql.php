@@ -123,9 +123,8 @@ if (!$res) {
         $mail->SMTPSecure = "ssl";
         $mail->Host       = "smtp.gmail.com";
         $mail->Port       = 465;
-        $mail->Username   = "fhs.genomics.core@gmail.com";
+        $mail->Username   = "******";
         $mail->Password   = "******";
-        $mail->SetFrom('fhs.genomics.core@gmail.com', 'fhs.genomics.core');
         $mail->Subject    = $Subject;
         $mail->MsgHTML($main_mesg);
 
@@ -138,9 +137,8 @@ if (!$res) {
         $mail->SMTPSecure = "tls";
         $mail->Host = "smtp.office365.com";
         $mail->Port = 587;
-        $mail->Username = "fhs.genomics.core@outlook.com";
+        $mail->Username = "******";
         $mail->Password = "******";
-        $mail->SetFrom('fhs.genomics.core@outlook.com', 'fhs.genomics.core');
         $mail->Subject = $Subject;
         $mail->MsgHTML($main_mesg);
         */
